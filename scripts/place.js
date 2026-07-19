@@ -1,4 +1,4 @@
-const temperature = 25;
+const temperature = 8;
 const windSpeed = 10;
 
 
