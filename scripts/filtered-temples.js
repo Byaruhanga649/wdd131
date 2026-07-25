@@ -62,7 +62,7 @@ const temples = [
         dedicated: "2019, March, 10",
         area: 41010,
         imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-55519.jpg"
+            "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple.jpg"
     },
     {
         templeName: "Nairobi Kenya",
@@ -78,7 +78,7 @@ const temples = [
         dedicated: "1893, April, 6",
         area: 253000,
         imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-3777.jpg"
+            "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-72933-thumb.jpg"
     }
 ];
 
@@ -108,9 +108,6 @@ function displayTemples(templeList) {
         image.loading = "lazy";
         image.width = 400;
         image.height = 250;
-        image.onerror = function () {
-            this.src = "images/placeholder.png";
-        };
         card.appendChild(name);
         card.appendChild(location);
         card.appendChild(dedicated);
