@@ -70,7 +70,7 @@ const temples = [
         dedicated: "2025, May, 18",
         area: 19800,
         imageUrl:
-             "https://churchofjesuschristtemples.org/assets/img/temples/nairobi-kenya-temple/nairobi-kenya-temple-60552.jpg"
+            "https://churchofjesuschristtemples.org/assets/img/temples/nairobi-kenya-temple/nairobi-kenya-temple-60552.jpg"
     },
     {
         templeName: "Salt Lake",
