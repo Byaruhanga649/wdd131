@@ -27,14 +27,27 @@ const products = [
     }
 ];
 
-// Populate the Product Name select element
+
+// Populate Product Name select
 const productSelect = document.querySelector("#productName");
 
 products.forEach(product => {
+
     const option = document.createElement("option");
 
     option.value = product.id;
     option.textContent = product.name;
 
     productSelect.appendChild(option);
+
 });
+
+
+// Footer Current Year
+document.getElementById("currentyear").textContent =
+    new Date().getFullYear();
+
+
+// Footer Last Modified
+document.getElementById("lastModified").textContent =
+    "Last Modified: " + document.lastModified;

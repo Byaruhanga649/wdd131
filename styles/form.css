@@ -1,5 +1,3 @@
-/* Google Font */
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 :root {
     --primary: #004080;
     --secondary: #f4f4f4;
@@ -16,7 +14,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     background: var(--secondary);
     color: var(--text);
     line-height: 1.6;
@@ -26,7 +24,7 @@ body {
 
 header {
     background: var(--primary);
-    color: white;
+    color: var(--white);
     text-align: center;
     padding: 1.5rem;
 }
@@ -41,9 +39,9 @@ main {
     max-width: 700px;
     margin: 2rem auto;
     padding: 1.5rem;
-    background: white;
+    background: var(--white);
     border-radius: 10px;
-    box-shadow: 0 0 12px rgba(0,0,0,.15);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Form */
@@ -61,18 +59,20 @@ form {
 
 label {
     font-weight: bold;
-    margin-bottom: .4rem;
+    margin-bottom: 0.4rem;
 }
 
 .required {
     color: red;
 }
 
+/* Inputs */
+
 input[type="text"],
 input[type="date"],
 select,
 textarea {
-    padding: .8rem;
+    padding: 0.8rem;
     border: 1px solid var(--border);
     border-radius: 6px;
     font-size: 1rem;
@@ -93,7 +93,7 @@ fieldset {
 
 legend {
     font-weight: bold;
-    padding: 0 .5rem;
+    padding: 0 0.5rem;
 }
 
 /* Rating */
@@ -101,7 +101,7 @@ legend {
 .rating {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 0.5rem;
 }
 
 .rating label {
@@ -110,37 +110,39 @@ legend {
 }
 
 .rating input {
-    margin-right: .5rem;
+    margin-right: 0.5rem;
 }
 
-/* Checkboxes */
+/* Checkbox */
 
 .checkbox-group {
     display: flex;
     flex-direction: column;
-    gap: .6rem;
+    gap: 0.6rem;
 }
 
 .checkbox-group label {
     font-weight: normal;
 }
 
-/* Submit */
+/* Submit Button */
 
 input[type="submit"] {
     background: var(--accent);
-    color: white;
+    color: var(--white);
     border: none;
     padding: 1rem;
     font-size: 1rem;
     border-radius: 6px;
     cursor: pointer;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 input[type="submit"]:hover {
     background: var(--primary);
 }
+
+/* Focus */
 
 input:focus,
 select:focus,
@@ -152,14 +154,14 @@ textarea:focus {
 
 footer {
     background: var(--primary);
-    color: white;
+    color: var(--white);
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
 }
 
 footer p {
-    margin: .3rem 0;
+    margin: 0.3rem 0;
 }
 
 /* Desktop */
@@ -174,7 +176,7 @@ footer p {
     .checkbox-group {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: .8rem;
+        gap: 0.8rem;
     }
 
 }
