@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Arthur Tech Solutions</title>
+
+    <meta name="description"
+        content="Contact Arthur Tech Solutions to discuss website development, responsive design, and frontend development projects.">
+
+    <meta name="author" content="Byaruhanga Arthur">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/project.css">
+
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+
+            <a class="logo" href="index.html">
+                Arthur Tech Solutions
+            </a>
+
+            <button class="menu-button" id="menu-button" aria-label="Open navigation menu">
+                ☰
+            </button>
+
+            <nav class="navigation" id="navigation">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="projects.html">Projects</a>
+                <a class="active" href="contact.html">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="page-banner">
+
+            <p class="eyebrow">Get In Touch</p>
+
+            <h1>Contact Arthur Tech Solutions</h1>
+
+            <p>
+                Tell us about your website idea, project, or digital
+                development needs.
+            </p>
+
+        </section>
+
+        <section class="section">
+
+            <div class="contact-layout">
+
+                <div class="contact-information">
+
+                    <p class="eyebrow">Let's Talk</p>
+
+                    <h2>Start Your Project</h2>
+
+                    <p>
+                        Complete the form and provide information about what
+                        you would like to build. Your information will be
+                        saved locally in your browser for this project
+                        demonstration.
+                    </p>
+
+                    <div class="info-card">
+                        <h3>Available Services</h3>
+
+                        <ul class="check-list">
+                            <li>Website Development</li>
+                            <li>Responsive Web Design</li>
+                            <li>Frontend Development</li>
+                            <li>Website Maintenance</li>
+                        </ul>
+                    </div>
+
+                    <div id="welcome-message" class="welcome-message">
+                        <!-- JavaScript displays localStorage message here -->
+                    </div>
+
+                </div>
+
+                <div class="form-container">
+
+                    <form id="contact-form">
+
+                        <div class="form-group">
+
+                            <label for="name">Full Name</label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                autocomplete="name"
+                                required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="email">Email Address</label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                autocomplete="email"
+                                required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="service">Service Needed</label>
+
+                            <select id="service" name="service" required>
+
+                                <option value="">
+                                    Select a service
+                                </option>
+
+                                <option value="website">
+                                    Website Development
+                                </option>
+
+                                <option value="responsive">
+                                    Responsive Web Design
+                                </option>
+
+                                <option value="frontend">
+                                    Frontend Development
+                                </option>
+
+                                <option value="maintenance">
+                                    Website Maintenance
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="message">Project Message</label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                required></textarea>
+
+                        </div>
+
+                        <button class="button primary-button form-button"
+                            type="submit">
+                            Send Message
+                        </button>
+
+                        <div id="form-message" class="form-message"
+                            aria-live="polite">
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div>
+                <h2>Arthur Tech Solutions</h2>
+                <p>Building practical and responsive digital experiences.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+                <a href="references.html">References</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy; <span id="current-year"></span> Arthur Tech Solutions.
+                All rights reserved.
+            </p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
